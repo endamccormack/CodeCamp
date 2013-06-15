@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="description" content="Sample personal website">
+	<meta name="author" content="Enda McCormack">
+
   <title>CodeCampDemoProject</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id="nav">
-		<div>
-			<ul>
+
+	<div id="navigation">
+		<div id="nav">
+			<ul class="yui3-u-1-2">
 				<li>Home</li>
 				<li>Blog</li>
 			</ul>
-			<img src="assets/kainos.png"/>
-		</div>
 
+			<div id="social">
+				<a href="" target="_blank"><img src="/assets/linkedin.png" alt=""></a>
+				<a href="" target="_blank"><img src="/assets/Google+.png" alt=""></a>
+				<a href="" target="_blank"><img src="/assets/facebook.png" alt=""></a>
+				<a href="" target="_blank"><img src="/assets/twitter.png" alt=""></a>
+			</div>
+		</div>
 	</div>
+
 	<div id="homeIntro">
-		<div></div>
-		<div id="">
-			<h1>Welcome</h1>
-			<h2>to my website</h2>
-			<h3>Which I built as part of CodeCamp</h3>
+		<div id="homeIntroContentWrapper">
+			<div class="yui3-u-3-4 right">
+				<img src="/assets/kainos%20code%20camp%20trans.png" class="right"/>
+			</div>
+			<div class="yui3-u-1-4">
+				<h1>Welcome</h1>
+				<h2>to my website</h2>
+				<h3>Which I built as part of CodeCamp</h3>
+			</div>
 		</div>
-
 	</div>
+
 	<div id="wrapper">
 		<div id="content">
 			<%= yield %>
 		</div>
 	</div>
-	<div id="footer">Developed by Enda Mc Cormack for Kainos Software</div>
+
+	<div id="footer">Developed by Kainos Software <br/><a href="#">Back to top</a></div>
+
 </body>
 </html>
