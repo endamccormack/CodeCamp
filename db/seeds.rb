@@ -31,3 +31,4 @@ a = Admin.new(
   :email => "endamccormack0@gmail.com",
   :password => 'password99'
 )
+a.save!(:validate => false)
