@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="description" content="Sample personal website">
+	<meta name="author" content="Enda McCormack">
+
   <title>CodeCampDemoProject</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div id="wrapper">
-		<%= yield %>
+
+	<div id="navigation">
+		<div id="nav">
+			<ul class="yui3-u-1-2">
+				<li><a href="/Index">Home</a></li>
+				<li><a href="/Posts">Blog Posts</a></li>
+			</ul>
+
+			<div id="social">
+				<a href="http://uk.linkedin.com/in/endamccormack/" target="_blank"><img src="/assets/linkedin.png" alt=""></a>
+				<a href="https://plus.google.com/104983373362997739840/about" target="_blank"><img src="/assets/Google+.png" alt=""></a>
+				<a href="https://www.facebook.com/enda.mccormack" target="_blank"><img src="/assets/facebook.png" alt=""></a>
+				<a href="https://twitter.com/EndaMcCormack" target="_blank"><img src="/assets/twitter.png" alt=""></a>
+			</div>
+		</div>
 	</div>
+
+
+	<div id="wrapper">
+		<div id="content">
+			<p class="notice"><%= notice %></p>
+			<%= yield %>
+		</div>
+	</div>
+
+	<div id="footer">Developed by Kainos Software <br/>
+		<a href="#">Back to top</a>
+		<% if admin_signed_in? %>
+		<%= link_to  "sign out as admin", destroy_admin_session_path, method: :delete %>
+		<% end %>
+	</div>
+
 </body>
 </html>

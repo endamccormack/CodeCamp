@@ -1,3 +1,40 @@
 // Place all the styles related to the blog controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+h1{
+	margin-bottom:0px;
+}
+
+.controls{
+	float: right;
+	a{
+		float:right;
+		text-decoration: none;
+		font-size:26px;
+		margin-left:5px;
+		color: #7d9cb0;
+		img{
+			height:16px;
+		}
+	}
+}
+h2.title{
+	margin-bottom: 0px;
+}
+h2.title a{
+	color: #41738c;
+	font-weight: 200;
+	text-decoration:none;
+}
+p.content{
+	margin-top: 0px;
+}
+.datePosted{
+	float:right;
+	font-size:9px;
+}
+#content h1{
+	color: #41738c;
+	font-weight: 200;
+}

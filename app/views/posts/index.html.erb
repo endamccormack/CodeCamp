@@ -1,0 +1,29 @@
+<h1>Posts</h1>
+<% if admin_signed_in? %>
+<%= link_to 'New Post', new_post_path %>
+<%end%>
+
+<% @posts.each do |post| %>
+
+    <div class="post">
+
+      <h2 class="title"><%= link_to post.title, post %></h2>
+      <% if admin_signed_in? %>
+      <div class="controls">
+   	    <%= link_to 'x', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <%= link_to image_tag("edit.png", :border => 0), edit_post_path(post)  %>
+      </div>
+      <%end%>
+
+      <p class="content">
+      	<%= truncate(post.content, :length => 280) %><br/>
+      	<span class="datePosted"><%= post.created_at.utc.strftime("%a, %b %e, %Y") %></span>
+      </p>
+      
+    </div>
+<% end %>
+
+
+<br />
+
+
