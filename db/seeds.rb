@@ -26,3 +26,8 @@ Integer sit amet enim cursus, adipiscing mi at, vehicula nulla. Praesent malesua
 
 Vestibulum dignissim felis in urna accumsan interdum eget eget nibh. In dapibus diam a convallis laoreet. Ut vitae velit quam. Nam sagittis feugiat varius. Duis nec vehicula augue, et dignissim nunc. Duis ac eros arcu. Nunc vulputate tristique elit ut molestie. Cras sit amet dictum purus. In porttitor tellus non nibh consectetur sodales.
 ')
+
+a = Admin.new(
+  :email => "endamccormack0@gmail.com",
+  :password => 'password99'
+)
