@@ -1,16 +1,15 @@
 <p id="notice"><%= notice %></p>
 
+<h1><%= @post.title %></h1>
+<span><%= @post.created_at.utc.strftime("%a, %b %e, %Y")  %></span>
+
+
+
 <p>
-  <b>Title:</b>
-  <%= @post.title %>
+  <%= simple_format(@post.content) %>
 </p>
 
-
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
-
-
+<% if admin_signed_in? %>
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+<% end %>
