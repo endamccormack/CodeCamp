@@ -28,7 +28,7 @@ Vestibulum dignissim felis in urna accumsan interdum eget eget nibh. In dapibus 
 ')
 
 a = Admin.new(
-  :email => "endamccormack0@gmail.com",
+  :email => "me@me.com",
   :password => 'password99'
 )
 a.save!(:validate => false)
