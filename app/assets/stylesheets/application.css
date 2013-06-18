@@ -39,7 +39,8 @@ div#navigation a:hover{
 	text-decoration: underline;
 }
 div#navigation div#nav{
-	width: 960px;
+	max-width: 960px;
+	min-width: 480px;
 	margin: 0 auto;
 }
 div#nav ul{
@@ -68,7 +69,8 @@ div#wrapper{
 	box-shadow: inset 0 0 10px #000000;
 }
 div#content{
-	width: 960px;
+	max-width: 960px;
+	min-width: 480px;
 	margin: 0 auto;
 }
 div#footer{
