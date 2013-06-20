@@ -40,7 +40,6 @@ div#navigation a:hover{
 }
 div#navigation div#nav{
 	max-width: 960px;
-	min-width: 480px;
 	margin: 0 auto;
 }
 div#nav ul{
@@ -71,7 +70,6 @@ div#wrapper{
 }
 div#content{
 	max-width: 960px;
-	min-width: 480px;
 	margin: 0 auto;
 }
 div#footer{
@@ -158,6 +156,10 @@ div#content h3{
 	}
 }
 @media (max-width: 640px) {
+	div#content{
+		width: 95% !important;
+		margin: 0 auto;
+	}
     div#welcomeText{
     	margin: 0 auto;
     	width: 95%;
@@ -172,10 +174,7 @@ div#content h3{
 	div#homeIntro h3{
 		font-size: 16px !important;
 	}
-	div#content div{
-		width: 95% !important;
-		margin: 0 auto;
-	}
+
   	.right, .left{
   		float: none;
   		display: block !important;
