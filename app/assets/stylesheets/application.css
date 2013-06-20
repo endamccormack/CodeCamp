@@ -194,4 +194,7 @@ div#content h3{
   	#bmc img{
   		margin: 0 !important;
   	}
+  	div#column1, div#column2, div#column3{
+  		width: 100% !important;
+  	}
 }
