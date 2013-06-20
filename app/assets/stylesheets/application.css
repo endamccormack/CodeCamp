@@ -48,6 +48,7 @@ div#nav ul{
 	padding-top: 16px;
 	padding-bottom: 20px;
 	padding-left: 0px;
+	display: inline-block;
 }
 div#nav ul li{
 	float: left;
@@ -130,6 +131,31 @@ div#content h3{
 	div#homeIntro h3{
 		font-size: 12px !important;
 	}	
+
+	div#navigation{
+		height: 40px;
+	}
+	div#navigation ul li a{
+		font-size: 18px;
+	}
+
+	div#nav ul{
+		margin:0px;
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+	div#nav ul li{
+		margin-right: 10px;
+	}
+	div#nav div#social{
+		margin-top: 0px;
+	}
+	div#nav div#social img{
+		margin-left: 0px;
+		height: 36px;
+		margin-top: 2px;
+	}
 }
 @media (max-width: 640px) {
     div#welcomeText{
