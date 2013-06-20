@@ -198,3 +198,16 @@ div#content h3{
   		width: 100% !important;
   	}
 }
+@media (max-width: 420px) {
+	div#homeIntro h1{
+		font-size: 50px !important;
+	}
+
+	div#homeIntro h2{
+		font-size: 30px !important;
+	}
+
+	div#homeIntro h3{
+		font-size: 12px !important;
+	}	
+}
