@@ -99,3 +99,74 @@ div#content h3{
 	font-weight: 200;
 	color: #41738c;
 }
+.floatClearer{
+	clear: both;
+}
+
+
+
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@media (max-width: 900px) {
+	div#homeIntro h1{
+		font-size: 50px !important;
+	}
+
+	div#homeIntro h2{
+		font-size: 30px !important;
+	}
+
+	div#homeIntro h3{
+		font-size: 12px !important;
+	}	
+}
+@media (max-width: 640px) {
+    div#welcomeText{
+    	margin: 0 auto;
+    	width: 95%;
+    }
+    div#homeIntro h1{
+		font-size: 74px !important;
+
+	}
+	div#homeIntro h2{
+		font-size: 46px !important;
+	}
+	div#homeIntro h3{
+		font-size: 16px !important;
+	}
+	div#content div{
+		width: 95% !important;
+		margin: 0 auto;
+	}
+  	.right, .left{
+  		float: none;
+  		display: block !important;
+  		
+  	}
+
+  	#codecamp{
+  		width: 70% !important;
+  		display: inline-block !important;
+  		float: left !important;
+  	}
+  	#bmc{
+  		width: 30% !important;
+  		display: inline-block !important;
+  		
+  	}
+  	#bmc img{
+  		margin: 0 !important;
+  	}
+}
