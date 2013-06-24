@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  before_filter :authenticate_admin!, only: [:new, :create, :edit, :update, :destroy]
+  before_filter :authenticate_admin!
   # GET /posts
   # GET /posts.json
   def index
