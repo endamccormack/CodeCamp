@@ -101,3 +101,105 @@ div#content h3{
 .floatClearer{
 	clear: both;
 }
+
+
+
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@media (max-width: 900px) {
+	div#homeIntro h1{
+		font-size: 50px !important;
+	}
+
+	div#homeIntro h2{
+		font-size: 30px !important;
+	}
+
+	div#homeIntro h3{
+		font-size: 12px !important;
+	}	
+
+	div#navigation{
+		height: 40px;
+	}
+	div#navigation ul li a{
+		font-size: 18px;
+	}
+
+	div#nav ul{
+		margin:0px;
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 5px;
+	}
+	div#nav ul li{
+		margin-right: 10px;
+	}
+	div#nav div#social{
+		margin-top: 0px;
+	}
+	div#nav div#social img{
+		margin-left: 0px;
+		height: 36px;
+		margin-top: 2px;
+	}
+}
+@media (max-width: 640px) {
+	div#content{
+		width: 95% !important;
+		margin: 0 auto;
+	}
+    div#welcomeText{
+    	margin: 0 auto;
+    	width: 95%;
+    }
+    div#homeIntro h1{
+		font-size: 74px !important;
+
+	}
+	div#homeIntro h2{
+		font-size: 46px !important;
+	}
+	div#homeIntro h3{
+		font-size: 16px !important;
+	}
+
+  	.right, .left{
+  		float: none;
+  		display: block !important;
+  		
+  	}
+
+  	#codecamp{
+  		width: 70% !important;
+  		display: inline-block !important;
+  		float: left !important;
+  	}
+  	div#column1, div#column2, div#column3{
+  		width: 100% !important;
+  	}
+}
+@media (max-width: 420px) {
+	div#homeIntro h1{
+		font-size: 50px !important;
+	}
+
+	div#homeIntro h2{
+		font-size: 30px !important;
+	}
+
+	div#homeIntro h3{
+		font-size: 12px !important;
+	}	
+}
