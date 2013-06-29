@@ -14,7 +14,7 @@ development:
   database: DATABASE_DEVELOPMENT
   pool: 5
   username: postgres
-  password: ***REMOVED***
+  password: 
   host: localhost
 
 test:
@@ -24,7 +24,7 @@ test:
   database: DATABASE_TEST
   pool: 5
   username: postgres
-  password: ***REMOVED***
+  password: 
   host: localhost
 
 production:
@@ -34,4 +34,4 @@ production:
   database: DATABASE_PRODUCTION
   pool: 5
   username: postgres
-  password:  ***REMOVED***
+  password:  
